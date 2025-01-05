@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+                <a href="#home"><i class="fa fa-home"></i> Home</a>
+                <a href="#sobre"><i class="fa fa-info-circle"></i> Sobre</a>
+                <a href="#projetos"><i class="fa fa-briefcase"></i> Projetos</a>
+                <a href="#contato"><i class="fa fa-envelope"></i> Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section class="home">
+            <div class="container">
+                <h1>Olá, eu sou o Lucas Longaray</h1>
+                <p>Desenvolvedor Web Full Stack</p>
+                <a href="#contato" class="btn">Entrar em contato</a>
+            </div>
+            <div class="container">
+                <img src="assets/img/developer.svg" alt="Desenvolvedor Web">
+            </div>
+        </section>
+        <section class="sobre">
+            <div class="container-100">
+            <h3>Sobre Mim</h3>
+            <p>Sou analista de TI, atualmente também atuando como coordenador de TI em uma startup. Estou cursando Análise e Desenvolvimento de Sistemas e tenho planos de fazer uma segunda graduação em Gestão de Tecnologia da Informação após finalizar o curso atual. Atualmente, possuo conhecimentos amplos e diversos em suporte de TI, sabendo um pouco de tudo, incluindo elétrica. Na área de desenvolvimento, tenho conhecimentos em Python, Django, React, Node.js, Java, C, Lua e Assembly.</p>
+            <p>Meu sonho é conquistar uma posição alta com boa remuneração até meus 30 anos e, posteriormente, montar minha própria empresa.</p>
+            </div>
+        </section>
+        <section class="projetos" id="projetos"></section>
+            <div class="container-100">
+            <h3>Projetos</h3>
+            <div class="labs-container">
+                <div class="option" onclick="openModal('modal-projetos')">Projetos</div>
+                <div class="option" onclick="openModal('modal-tec')">Conhecimentos Técnicos</div>
+                <div class="option" onclick="openModal('modal-espec')">Conhecimentos Específicos</div>
+            </div>
+            </div>
+
+            <div class="modal" id="modal-projetos">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal-projetos')">&times;</span>
+                    <h4>Projetos</h4>
+                    <p>Descrição dos projetos realizados...</p>
+                </div>
+            </div>
+            <div class="projects-list">
+                <div class="project-card">
+                    <img src="assets/img/project1.jpg" alt="Projeto 1">
+                    <h4>Projeto 1</h4>
+                    <p>Descrição do Projeto 1...</p>
+                </div>
+                <div class="project-card">
+                    <img src="assets/img/project2.jpg" alt="Projeto 2">
+                    <h4>Projeto 2</h4>
+                    <p>Descrição do Projeto 2...</p>
+                </div>
+                <div class="project-card">
+                    <img src="assets/img/project3.jpg" alt="Projeto 3">
+                    <h4>Projeto 3</h4>
+                    <p>Descrição do Projeto 3...</p>
+                </div>
+            </div>
+            <div class="modal" id="modal-tec">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal-tec')">&times;</span>
+                    <h4>Conhecimentos Técnicos</h4>
+                    <p>Descrição dos conhecimentos técnicos...</p>
+                </div>
+            </div>
+            <div class="tech-cards">
+                <div class="tech-card">
+                    <img src="assets/img/python.png" alt="Python">
+                    <h4>Python</h4>
+                </div>
+                <div class="tech-card">
+                    <img src="assets/img/django.png" alt="Django">
+                    <h4>Django</h4>
+                </div>
+                <div class="tech-card">
+                    <img src="assets/img/react.png" alt="React">
+                    <h4>React</h4>
+                </div>
+                <div class="tech-card">
+                    <img src="assets/img/nodejs.png" alt="Node.js">
+                    <h4>Node.js</h4>
+                </div>
+                <div class="tech-card">
+                    <img src="assets/img/java.png" alt="Java">
+                    <h4>Java</h4>
+                </div>
+                <div class="tech-card">
+                    <img src="assets/img/c.png" alt="C">
+                    <h4>C</h4>
+                </div>
+                <div class="tech-card">
+                    <img src="assets/img/lua.png" alt="Lua">
+                    <h4>Lua</h4>
+                </div>
+                <div class="tech-card">
+                    <img src="assets/img/assembly.png" alt="Assembly">
+                    <h4>Assembly</h4>
+                </div>
+            </div>
+            <div class="modal" id="modal-espec">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal-espec')">&times;</span>
+                    <h4>Conhecimentos Específicos</h4>
+                    <p>Descrição dos conhecimentos específicos...</p>
+                </div>
+            </div>
+            <div class="specific-cards">
+                <div class="specific-card">
+                    <img src="assets/img/django.png" alt="Django">
+                    <h4>Django</h4>
+                </div>
+                <div class="specific-card">
+                    <img src="assets/img/openxls.png" alt="OpenXLS">
+                    <h4>OpenXLS</h4>
+                </div>
+                <div class="specific-card">
+                    <img src="assets/img/pandas.png" alt="Pandas">
+                    <h4>Pandas</h4>
+                </div>
+                <div class="specific-card">
+                    <img src="assets/img/rest.png" alt="REST">
+                    <h4>REST</h4>
+                </div>
+            </div>
+        </section>
+        <section class="contato" id="contato"></section>
+            <div class="content">
+            <div class="sub-content texto"></div>
+                <h3>Contato</h3>
+                <p>Preencha o formulário abaixo para entrar em contato.</p>
+            </div>
+            <div class="sub-content form">
+                <div class="container-form">
+                <form action="">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="celular">Celular:</label>
+                    <input type="tel" id="celular" name="celular" required>
+
+                    <label for="titulo">Título:</label>
+                    <input type="text" id="titulo" name="titulo" required>
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Todos os direitos reservados.</p>
+        <div class="contact-icons">
+            <a href="https://wa.me/5551994377373" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <a href="https://github.com/llongaray" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
